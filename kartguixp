@@ -18,11 +18,8 @@ local Title_2 = Instance.new("TextLabel")
 local SpamBackwards = Instance.new("Frame")
 local Checkbox_2 = Instance.new("ImageButton")
 local Title_3 = Instance.new("TextLabel")
-local JitterCarts = Instance.new("Frame")
-local Checkbox_3 = Instance.new("ImageButton")
-local Title_4 = Instance.new("TextLabel")
 local Line = Instance.new("ImageLabel")
-local Title_5 = Instance.new("TextLabel")
+local Title_4 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -41,7 +38,7 @@ XPBackground.Name = "XPBackground"
 XPBackground.Parent = MainFrame
 XPBackground.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 XPBackground.BackgroundTransparency = 1.000
-XPBackground.Size = UDim2.new(0.999095261, 0, 1.00000024, 0)
+XPBackground.Size = UDim2.new(0.999095261, 0, 0.517414153, 0)
 XPBackground.Image = "http://www.roblox.com/asset/?id=5838849817"
 XPBackground.ScaleType = Enum.ScaleType.Slice
 XPBackground.SliceCenter = Rect.new(7, 33, 7, 33)
@@ -161,35 +158,6 @@ Title_3.TextScaled = true
 Title_3.TextSize = 14.000
 Title_3.TextWrapped = true
 
-JitterCarts.Name = "JitterCarts"
-JitterCarts.Parent = CheckboxFrame
-JitterCarts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JitterCarts.BackgroundTransparency = 0.900
-JitterCarts.Position = UDim2.new(0.00399997225, 0, 0.422140598, 0)
-JitterCarts.Size = UDim2.new(0, 210, 0, 31)
-
-Checkbox_3.Name = "Checkbox"
-Checkbox_3.Parent = JitterCarts
-Checkbox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Checkbox_3.BackgroundTransparency = 1.000
-Checkbox_3.Position = UDim2.new(0.787999988, 0, 0.161290318, 0)
-Checkbox_3.Size = UDim2.new(0, 26, 0, 26)
-Checkbox_3.Image = "rbxassetid://6531499312"
-
-Title_4.Name = "Title"
-Title_4.Parent = JitterCarts
-Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_4.BackgroundTransparency = 1.000
-Title_4.Position = UDim2.new(0.0439999551, 0, 0, 0)
-Title_4.Size = UDim2.new(0, 152, 0, 31)
-Title_4.ZIndex = 2
-Title_4.Font = Enum.Font.Arcade
-Title_4.Text = "Jitter Carts:"
-Title_4.TextColor3 = Color3.fromRGB(139, 139, 139)
-Title_4.TextScaled = true
-Title_4.TextSize = 14.000
-Title_4.TextWrapped = true
-
 Line.Name = "Line"
 Line.Parent = MainFrame
 Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -198,23 +166,23 @@ Line.Position = UDim2.new(8.63705009e-06, 0, 0.226375625, 0)
 Line.Size = UDim2.new(0, 211, 0, 6)
 Line.Image = "rbxassetid://6531586437"
 
-Title_5.Name = "Title"
-Title_5.Parent = MainFrame
-Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_5.BackgroundTransparency = 1.000
-Title_5.Position = UDim2.new(0, 0, 0.12350598, 0)
-Title_5.Size = UDim2.new(0, 211, 0, 26)
-Title_5.ZIndex = 2
-Title_5.Font = Enum.Font.Arcade
-Title_5.Text = "Make Kids Mad"
-Title_5.TextColor3 = Color3.fromRGB(139, 139, 139)
-Title_5.TextScaled = true
-Title_5.TextSize = 14.000
-Title_5.TextWrapped = true
+Title_4.Name = "Title"
+Title_4.Parent = MainFrame
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0, 0, 0.12350598, 0)
+Title_4.Size = UDim2.new(0, 211, 0, 26)
+Title_4.ZIndex = 2
+Title_4.Font = Enum.Font.Arcade
+Title_4.Text = "Make Kids Mad"
+Title_4.TextColor3 = Color3.fromRGB(139, 139, 139)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
 
 -- Scripts:
 
-local function FUXQID_fake_script() -- Minimize.MinimizeScript 
+local function KUJEKVQ_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -225,8 +193,8 @@ local function FUXQID_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(FUXQID_fake_script)()
-local function GGYNPBH_fake_script() -- Close.CloseScript 
+coroutine.wrap(KUJEKVQ_fake_script)()
+local function SLWPJ_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -237,8 +205,8 @@ local function GGYNPBH_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(GGYNPBH_fake_script)()
-local function ZCWRYH_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(SLWPJ_fake_script)()
+local function SPOV_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -249,8 +217,8 @@ local function ZCWRYH_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(ZCWRYH_fake_script)()
-local function DVVXJG_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(SPOV_fake_script)()
+local function HJXADMB_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "DragScript"
@@ -295,8 +263,8 @@ local function DVVXJG_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(DVVXJG_fake_script)()
-local function SRFI_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(HJXADMB_fake_script)()
+local function LDXUVPN_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -316,17 +284,69 @@ local function SRFI_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(SRFI_fake_script)()
-local function VPWUX_fake_script() -- Checkbox.SetValue 
+coroutine.wrap(LDXUVPN_fake_script)()
+local function DIRWLKL_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
 	currentlyChecked = false
 	
+	local function SpamForwards()
+		for i, v in pairs(workspace:GetDescendants()) do
+			if v.Parent.Name == "Up" and v.ClassName == "ClickDetector" then
+				spawn(function()
+					while true do
+						wait()
+						if v then
+							fireclickdetector(v)
+						else
+							break;
+						end
+					end
+				end)
+			elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
+				if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(v)
+				end
+				v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
+					if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+						fireclickdetector(v)
+					end
+				end)
+			end
+		end
+	
+		workspace.DescendantAdded:Connect(function(descendant)
+			if descendant.Parent.Name == "Up" and descendant.ClassName == "ClickDetector" then
+				spawn(function()
+					while true do
+						wait()
+						if descendant then
+							fireclickdetector(descendant)
+						else
+							break;
+						end
+					end
+				end)
+			elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
+				if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(descendant)
+				end
+				descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
+					if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+						fireclickdetector(descendant)
+					end
+				end)
+			end
+		end)
+	end
+	
+	
 	function leftClick()
 		if currentlyChecked == false then
 			currentlyChecked = true
 			script.Parent.Image = "rbxassetid://6531499566"
 			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			SpamForwards()
 		else
 			currentlyChecked = false
 			script.Parent.Image = "rbxassetid://6531499312"
@@ -336,139 +356,71 @@ local function VPWUX_fake_script() -- Checkbox.SetValue
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
-	while currentlyChecked do
-		for i, v in pairs(workspace:GetDescendants()) do
-				if v.Parent.Name == "Up" and v.ClassName == "ClickDetector" then
-					spawn(function()
-						while true do
-							wait()
-							if v then
-								fireclickdetector(v)
-							else
-								break;
-							end
-						end
-					end)
-				elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
-					if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
-						fireclickdetector(v)
-					end
-					v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
-						if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
-							fireclickdetector(v)
-						end
-					end)
-				end
-			end
 	
-			workspace.DescendantAdded:Connect(function(descendant)
-				if descendant.Parent.Name == "Up" and descendant.ClassName == "ClickDetector" then
-					spawn(function()
-						while true do
-							wait()
-							if descendant then
-								fireclickdetector(descendant)
-							else
-								break;
-							end
-						end
-					end)
-				elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
-					if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
-						fireclickdetector(descendant)
-					end
-					descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
-						if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
-							fireclickdetector(descendant)
-						end
-					end)
-				end
-			end)
-		end
 	
 end
-coroutine.wrap(VPWUX_fake_script)()
-local function KOQWCF_fake_script() -- Checkbox_2.SetValue 
+coroutine.wrap(DIRWLKL_fake_script)()
+local function HAXANPQ_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
 	currentlyChecked = false
 	
-	function leftClick()
-		if currentlyChecked == false then
-			currentlyChecked = true
-			script.Parent.Image = "rbxassetid://6531499566"
-			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
-		else
-			currentlyChecked = false
-			script.Parent.Image = "rbxassetid://6531499312"
-			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
-		end
-	end
-	
-	script.Parent.MouseButton1Click:Connect(leftClick)
-	
-	while currentlyChecked do
+	local function SpamBackwards()
 		for i, v in pairs(workspace:GetDescendants()) do
-				if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
-					spawn(function()
-						while true do
-							wait()
-							if v then
-								fireclickdetector(v)
-							else
-								break;
-							end
+			if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
+				spawn(function()
+					while true do
+						wait()
+						if v then
+							fireclickdetector(v)
+						else
+							break;
 						end
-					end)
-				elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
+					end
+				end)
+			elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
+				if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(v)
+				end
+				v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
 					if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
 						fireclickdetector(v)
 					end
-					v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
-						if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
-							fireclickdetector(v)
-						end
-					end)
-				end
+				end)
 			end
+		end
 	
-			workspace.DescendantAdded:Connect(function(descendant)
-				if descendant.Parent.Name == "Down" and descendant.ClassName == "ClickDetector" then
-					spawn(function()
-						while true do
-							wait()
-							if descendant then
-								fireclickdetector(descendant)
-							else
-								break;
-							end
+		workspace.DescendantAdded:Connect(function(descendant)
+			if descendant.Parent.Name == "Down" and descendant.ClassName == "ClickDetector" then
+				spawn(function()
+					while true do
+						wait()
+						if descendant then
+							fireclickdetector(descendant)
+						else
+							break;
 						end
-					end)
-				elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
+					end
+				end)
+			elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
+				if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(descendant)
+				end
+				descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
 					if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
 						fireclickdetector(descendant)
 					end
-					descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
-						if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
-							fireclickdetector(descendant)
-						end
-					end)
-				end
-			end)
-		end
-	
-end
-coroutine.wrap(KOQWCF_fake_script)()
-local function SEXP_fake_script() -- Checkbox_3.SetValue 
-	local script = Instance.new('LocalScript', Checkbox_3)
-
-	currentlyChecked = false
+				end)
+			end
+		end)
+	end
 	
 	function leftClick()
 		if currentlyChecked == false then
 			currentlyChecked = true
 			script.Parent.Image = "rbxassetid://6531499566"
 			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			SpamBackwards()
 		else
 			currentlyChecked = false
 			script.Parent.Image = "rbxassetid://6531499312"
@@ -478,42 +430,7 @@ local function SEXP_fake_script() -- Checkbox_3.SetValue
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
-	while currentlyChecked do
-		for i, v in pairs(workspace:GetDescendants()) do
-				if v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
-				if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
-					spawn(function()
-						while true do
-							wait()
-							fireclickdetector(v)
-					end
-					v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
-						if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
-							fireclickdetector(v)
-						end
-					end)
-				end)
-				end
-			end
-		end
-		workspace.DescendantAdded:Connect(function(descendant)
 	
-			if descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
-				if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
-					spawn(function()
-						while true do
-							wait()
-							fireclickdetector(descendant)
-						end
-						descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
-							if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
-								fireclickdetector(descendant)
-							end
-						end)
-					end)
-				end
-			end
-		end)
-	end
+	
 end
-coroutine.wrap(SEXP_fake_script)()
+coroutine.wrap(HAXANPQ_fake_script)()
