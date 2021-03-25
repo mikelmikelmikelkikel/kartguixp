@@ -182,7 +182,7 @@ Title_4.TextWrapped = true
 
 -- Scripts:
 
-local function DSBK_fake_script() -- Minimize.MinimizeScript 
+local function ZOTQBTD_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -193,8 +193,8 @@ local function DSBK_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(DSBK_fake_script)()
-local function PSPGR_fake_script() -- Close.CloseScript 
+coroutine.wrap(ZOTQBTD_fake_script)()
+local function VQYU_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -205,8 +205,8 @@ local function PSPGR_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(PSPGR_fake_script)()
-local function CQCJ_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(VQYU_fake_script)()
+local function EPZF_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -217,8 +217,8 @@ local function CQCJ_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(CQCJ_fake_script)()
-local function QAJWEI_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(EPZF_fake_script)()
+local function DKHIS_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "DragScript"
@@ -263,8 +263,8 @@ local function QAJWEI_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(QAJWEI_fake_script)()
-local function PBRR_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(DKHIS_fake_script)()
+local function SLVPGB_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -284,8 +284,8 @@ local function PBRR_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(PBRR_fake_script)()
-local function NPSGHP_fake_script() -- Checkbox.SetValue 
+coroutine.wrap(SLVPGB_fake_script)()
+local function KTOJEM_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
 	currentlyChecked = false
@@ -359,14 +359,15 @@ local function NPSGHP_fake_script() -- Checkbox.SetValue
 	
 	
 end
-coroutine.wrap(NPSGHP_fake_script)()
-local function MBCAGV_fake_script() -- Checkbox_2.SetValue 
+coroutine.wrap(KTOJEM_fake_script)()
+local function FKEG_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
 	currentlyChecked = false
 	
+	
 	local function SpamBackwards()
-		while true do wait(1) if currentlyChecked == false then break end
+		if currentlyChecked == false then return end
 		for i, v in pairs(workspace:GetDescendants()) do
 			if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
 				spawn(function()
@@ -416,23 +417,24 @@ local function MBCAGV_fake_script() -- Checkbox_2.SetValue
 		end)
 	end
 	
+	SpamBackwards()
+	
 	function leftClick()
 		if currentlyChecked == false then
 			currentlyChecked = true
 			script.Parent.Image = "rbxassetid://6531499566"
 			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
-			SpamBackwards()
 		else
 			currentlyChecked = false
 			script.Parent.Image = "rbxassetid://6531499312"
 			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		end
 	end
-	end
+	
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 	
 	
 end
-coroutine.wrap(MBCAGV_fake_script)()
+coroutine.wrap(FKEG_fake_script)()
