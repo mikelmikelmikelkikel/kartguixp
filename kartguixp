@@ -38,7 +38,7 @@ XPBackground.Name = "XPBackground"
 XPBackground.Parent = MainFrame
 XPBackground.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 XPBackground.BackgroundTransparency = 1.000
-XPBackground.Size = UDim2.new(0.999095261, 0, 0.517414153, 0)
+XPBackground.Size = UDim2.new(0.999095261, 0, 0.493509799, 0)
 XPBackground.Image = "http://www.roblox.com/asset/?id=5838849817"
 XPBackground.ScaleType = Enum.ScaleType.Slice
 XPBackground.SliceCenter = Rect.new(7, 33, 7, 33)
@@ -182,7 +182,7 @@ Title_4.TextWrapped = true
 
 -- Scripts:
 
-local function ZOTQBTD_fake_script() -- Minimize.MinimizeScript 
+local function TOSXD_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -193,8 +193,8 @@ local function ZOTQBTD_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(ZOTQBTD_fake_script)()
-local function VQYU_fake_script() -- Close.CloseScript 
+coroutine.wrap(TOSXD_fake_script)()
+local function PKICQ_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -205,8 +205,8 @@ local function VQYU_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(VQYU_fake_script)()
-local function EPZF_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(PKICQ_fake_script)()
+local function NARTRZ_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -217,8 +217,8 @@ local function EPZF_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(EPZF_fake_script)()
-local function DKHIS_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(NARTRZ_fake_script)()
+local function ASKSICZ_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "DragScript"
@@ -263,8 +263,8 @@ local function DKHIS_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(DKHIS_fake_script)()
-local function SLVPGB_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(ASKSICZ_fake_script)()
+local function BGYOI_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -284,8 +284,8 @@ local function SLVPGB_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(SLVPGB_fake_script)()
-local function KTOJEM_fake_script() -- Checkbox.SetValue 
+coroutine.wrap(BGYOI_fake_script)()
+local function LTVWRRI_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
 	currentlyChecked = false
@@ -359,15 +359,14 @@ local function KTOJEM_fake_script() -- Checkbox.SetValue
 	
 	
 end
-coroutine.wrap(KTOJEM_fake_script)()
-local function FKEG_fake_script() -- Checkbox_2.SetValue 
+coroutine.wrap(LTVWRRI_fake_script)()
+local function ASSYXOB_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
 	currentlyChecked = false
 	
 	
 	local function SpamBackwards()
-		if currentlyChecked == false then return end
 		for i, v in pairs(workspace:GetDescendants()) do
 			if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
 				spawn(function()
@@ -412,6 +411,7 @@ local function FKEG_fake_script() -- Checkbox_2.SetValue
 					if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
 						fireclickdetector(descendant)
 					end
+					tick(1) if currentlyChecked then print("CurrentlySpammingBackwards") else print("Ending") return end
 				end)
 			end
 		end)
@@ -437,4 +437,4 @@ local function FKEG_fake_script() -- Checkbox_2.SetValue
 	
 	
 end
-coroutine.wrap(FKEG_fake_script)()
+coroutine.wrap(ASSYXOB_fake_script)()
