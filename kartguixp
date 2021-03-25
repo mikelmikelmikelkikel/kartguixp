@@ -214,7 +214,7 @@ Title_5.TextWrapped = true
 
 -- Scripts:
 
-local function RRHTN_fake_script() -- Minimize.MinimizeScript 
+local function FUXQID_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -225,8 +225,8 @@ local function RRHTN_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(RRHTN_fake_script)()
-local function IMWA_fake_script() -- Close.CloseScript 
+coroutine.wrap(FUXQID_fake_script)()
+local function GGYNPBH_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -237,8 +237,8 @@ local function IMWA_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(IMWA_fake_script)()
-local function EWIJVXS_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(GGYNPBH_fake_script)()
+local function ZCWRYH_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -249,8 +249,8 @@ local function EWIJVXS_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(EWIJVXS_fake_script)()
-local function TKAU_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(ZCWRYH_fake_script)()
+local function DVVXJG_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "DragScript"
@@ -295,8 +295,8 @@ local function TKAU_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(TKAU_fake_script)()
-local function UZPWVEH_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(DVVXJG_fake_script)()
+local function SRFI_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -316,8 +316,8 @@ local function UZPWVEH_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(UZPWVEH_fake_script)()
-local function YEXLM_fake_script() -- Checkbox.SetValue 
+coroutine.wrap(SRFI_fake_script)()
+local function VPWUX_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
 	currentlyChecked = false
@@ -326,11 +326,11 @@ local function YEXLM_fake_script() -- Checkbox.SetValue
 		if currentlyChecked == false then
 			currentlyChecked = true
 			script.Parent.Image = "rbxassetid://6531499566"
-			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		else
 			currentlyChecked = false
 			script.Parent.Image = "rbxassetid://6531499312"
-			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		end
 	end
 	
@@ -387,8 +387,8 @@ local function YEXLM_fake_script() -- Checkbox.SetValue
 		end
 	
 end
-coroutine.wrap(YEXLM_fake_script)()
-local function KCDI_fake_script() -- Checkbox_2.SetValue 
+coroutine.wrap(VPWUX_fake_script)()
+local function KOQWCF_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
 	currentlyChecked = false
@@ -397,11 +397,11 @@ local function KCDI_fake_script() -- Checkbox_2.SetValue
 		if currentlyChecked == false then
 			currentlyChecked = true
 			script.Parent.Image = "rbxassetid://6531499566"
-			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		else
 			currentlyChecked = false
 			script.Parent.Image = "rbxassetid://6531499312"
-			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		end
 	end
 	
@@ -458,8 +458,8 @@ local function KCDI_fake_script() -- Checkbox_2.SetValue
 		end
 	
 end
-coroutine.wrap(KCDI_fake_script)()
-local function WIQZM_fake_script() -- Checkbox_3.SetValue 
+coroutine.wrap(KOQWCF_fake_script)()
+local function SEXP_fake_script() -- Checkbox_3.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_3)
 
 	currentlyChecked = false
@@ -468,11 +468,11 @@ local function WIQZM_fake_script() -- Checkbox_3.SetValue
 		if currentlyChecked == false then
 			currentlyChecked = true
 			script.Parent.Image = "rbxassetid://6531499566"
-			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		else
 			currentlyChecked = false
 			script.Parent.Image = "rbxassetid://6531499312"
-			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
 		end
 	end
 	
@@ -516,4 +516,4 @@ local function WIQZM_fake_script() -- Checkbox_3.SetValue
 		end)
 	end
 end
-coroutine.wrap(WIQZM_fake_script)()
+coroutine.wrap(SEXP_fake_script)()
