@@ -288,7 +288,7 @@ coroutine.wrap(VRHV_fake_script)()
 local function LUVYV_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
-	script.Parent.SpammingForwards.Disabled = true
+	
 	local currentlyChecked = false
 	local activateScript = script.Parent.SpammingForwards
 	
@@ -315,9 +315,11 @@ end
 coroutine.wrap(LUVYV_fake_script)()
 local function AXRXOV_fake_script() -- Checkbox.SpammingForwards 
 	local script = Instance.new('LocalScript', Checkbox)
-	script.Disabled = true
 	script.Name = "SpammingForwards"
-	script.Parent = Checkbox
+	script.Disabled = true
+	
+
+	
 	
 	for i, v in pairs(workspace:GetDescendants()) do
 		if v.Parent.Name == "Up" and v.ClassName == "ClickDetector" then
@@ -371,7 +373,7 @@ coroutine.wrap(AXRXOV_fake_script)()
 local function YWHRJM_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
-	script.Parent.SpammingBackwards.Disabled = true
+
 	local currentlyChecked = false
 	local activateScript = script.Parent.SpammingBackwards
 	
@@ -399,9 +401,9 @@ end
 coroutine.wrap(YWHRJM_fake_script)()
 local function FKKQDX_fake_script() -- Checkbox_2.SpammingBackwards 
 	local script = Instance.new('LocalScript', Checkbox_2)
-	script.Disabled = true
 	script.Name = "SpammingBackwards"
-	script.Parent = Checkbox_2
+	script.Disabled = true
+	
 	
 	for i, v in pairs(workspace:GetDescendants()) do
 		if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
