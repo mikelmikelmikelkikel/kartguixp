@@ -317,6 +317,7 @@ local function AXRXOV_fake_script() -- Checkbox.SpammingForwards
 	local script = Instance.new('LocalScript', Checkbox)
 	script.Disabled = true
 	script.Name = "SpammingForwards"
+	script.Parent = Checkbox
 	
 	for i, v in pairs(workspace:GetDescendants()) do
 		if v.Parent.Name == "Up" and v.ClassName == "ClickDetector" then
@@ -400,7 +401,7 @@ local function FKKQDX_fake_script() -- Checkbox_2.SpammingBackwards
 	local script = Instance.new('LocalScript', Checkbox_2)
 	script.Disabled = true
 	script.Name = "SpammingBackwards"
-	
+	script.Parent = Checkbox_2
 	
 	for i, v in pairs(workspace:GetDescendants()) do
 		if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
