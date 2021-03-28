@@ -182,7 +182,7 @@ Title_4.TextWrapped = true
 
 -- Scripts:
 
-local function FPPWMG_fake_script() -- Minimize.MinimizeScript 
+local function DBQTLYR_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -193,8 +193,8 @@ local function FPPWMG_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(FPPWMG_fake_script)()
-local function ODUJGYL_fake_script() -- Close.CloseScript 
+coroutine.wrap(DBQTLYR_fake_script)()
+local function HJOZ_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -205,8 +205,8 @@ local function ODUJGYL_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(ODUJGYL_fake_script)()
-local function ATYVUAK_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(HJOZ_fake_script)()
+local function TNJTNZB_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -217,8 +217,8 @@ local function ATYVUAK_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(ATYVUAK_fake_script)()
-local function APGHVAX_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(TNJTNZB_fake_script)()
+local function VOKAKYB_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "DragScript"
@@ -263,8 +263,8 @@ local function APGHVAX_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(APGHVAX_fake_script)()
-local function VRHV_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(VOKAKYB_fake_script)()
+local function TFUVHE_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -284,13 +284,12 @@ local function VRHV_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(VRHV_fake_script)()
-local function LUVYV_fake_script() -- Checkbox.SetValue 
+coroutine.wrap(TFUVHE_fake_script)()
+local function HRUOHB_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
-	
 	local currentlyChecked = false
-	local activateScript = script.Parent.SpammingForwards
+	local activateScript = script.Parent:WaitForChild("SpammingForwards")
 	
 	function leftClick()
 		if currentlyChecked == false then
@@ -312,14 +311,11 @@ local function LUVYV_fake_script() -- Checkbox.SetValue
 	
 	
 end
-coroutine.wrap(LUVYV_fake_script)()
-local function AXRXOV_fake_script() -- Checkbox.SpammingForwards 
+coroutine.wrap(HRUOHB_fake_script)()
+local function BXYMQ_fake_script() -- Checkbox.SpammingForwards 
 	local script = Instance.new('LocalScript', Checkbox)
 	script.Name = "SpammingForwards"
 	script.Disabled = true
-	
-
-	
 	
 	for i, v in pairs(workspace:GetDescendants()) do
 		if v.Parent.Name == "Up" and v.ClassName == "ClickDetector" then
@@ -369,13 +365,12 @@ local function AXRXOV_fake_script() -- Checkbox.SpammingForwards
 		end
 	end)
 end
-coroutine.wrap(AXRXOV_fake_script)()
-local function YWHRJM_fake_script() -- Checkbox_2.SetValue 
+coroutine.wrap(BXYMQ_fake_script)()
+local function DYJVXN_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
-
 	local currentlyChecked = false
-	local activateScript = script.Parent.SpammingBackwards
+	local activateScript = script.Parent:WaitForChild("SpammingBackwards")
 	
 	function leftClick()
 		if currentlyChecked == false then
@@ -398,8 +393,8 @@ local function YWHRJM_fake_script() -- Checkbox_2.SetValue
 	
 	
 end
-coroutine.wrap(YWHRJM_fake_script)()
-local function FKKQDX_fake_script() -- Checkbox_2.SpammingBackwards 
+coroutine.wrap(DYJVXN_fake_script)()
+local function FCAG_fake_script() -- Checkbox_2.SpammingBackwards 
 	local script = Instance.new('LocalScript', Checkbox_2)
 	script.Name = "SpammingBackwards"
 	script.Disabled = true
@@ -460,4 +455,4 @@ local function FKKQDX_fake_script() -- Checkbox_2.SpammingBackwards
 	end)
 	
 end
-coroutine.wrap(FKKQDX_fake_script)()
+coroutine.wrap(FCAG_fake_script)()
