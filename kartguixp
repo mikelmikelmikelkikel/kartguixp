@@ -407,14 +407,13 @@ local function FCAG_fake_script() -- Checkbox_2.SpammingBackwards
 					wait()
 					if v then
 						fireclickdetector(v)
-						if currentlyChecked == false then break;
+						
 						else
 							break;
 	
 						end
 					end
-				end
-			end)
+				end)
 		elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
 			if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
 				fireclickdetector(v)
@@ -434,13 +433,12 @@ local function FCAG_fake_script() -- Checkbox_2.SpammingBackwards
 					wait()
 					if descendant then
 						fireclickdetector(descendant)
-						if currentlyChecked == false then break;
+						
 						else
 							break;
 						end
 					end
-				end
-			end)
+				end)
 		elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
 			if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
 				fireclickdetector(descendant)
