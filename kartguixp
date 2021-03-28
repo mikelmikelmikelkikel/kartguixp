@@ -182,7 +182,7 @@ Title_4.TextWrapped = true
 
 -- Scripts:
 
-local function UMTOAG_fake_script() -- Minimize.MinimizeScript 
+local function FPPWMG_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -193,8 +193,8 @@ local function UMTOAG_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(UMTOAG_fake_script)()
-local function FUFKWZH_fake_script() -- Close.CloseScript 
+coroutine.wrap(FPPWMG_fake_script)()
+local function ODUJGYL_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -205,8 +205,8 @@ local function FUFKWZH_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(FUFKWZH_fake_script)()
-local function TIELMG_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(ODUJGYL_fake_script)()
+local function ATYVUAK_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -217,8 +217,8 @@ local function TIELMG_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(TIELMG_fake_script)()
-local function FQRZ_fake_script() -- MainFrame.DragScript 
+coroutine.wrap(ATYVUAK_fake_script)()
+local function APGHVAX_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "DragScript"
@@ -263,8 +263,8 @@ local function FQRZ_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(FQRZ_fake_script)()
-local function TMKYCCY_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(APGHVAX_fake_script)()
+local function VRHV_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -284,10 +284,11 @@ local function TMKYCCY_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(TMKYCCY_fake_script)()
-local function GIBIZ_fake_script() -- Checkbox.SetValue 
+coroutine.wrap(VRHV_fake_script)()
+local function LUVYV_fake_script() -- Checkbox.SetValue 
 	local script = Instance.new('LocalScript', Checkbox)
 
+	script.Parent.SpammingForwards.Disabled = true
 	local currentlyChecked = false
 	local activateScript = script.Parent.SpammingForwards
 	
@@ -311,11 +312,65 @@ local function GIBIZ_fake_script() -- Checkbox.SetValue
 	
 	
 end
-coroutine.wrap(GIBIZ_fake_script)()
--- Checkbox.SpammingForwards is disabled.
-local function ZQAI_fake_script() -- Checkbox_2.SetValue 
+coroutine.wrap(LUVYV_fake_script)()
+local function AXRXOV_fake_script() -- Checkbox.SpammingForwards 
+	local script = Instance.new('LocalScript', Checkbox)
+	script.Disabled = true
+	script.Name = "SpammingForwards"
+	
+	for i, v in pairs(workspace:GetDescendants()) do
+		if v.Parent.Name == "Up" and v.ClassName == "ClickDetector" then
+			spawn(function()
+				while true do
+					wait()
+					if v then
+						fireclickdetector(v)
+					else
+						break;
+					end
+				end
+			end)
+		elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
+			if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+				fireclickdetector(v)
+			end
+			v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
+				if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(v)
+				end
+			end)
+		end
+	end
+	
+	workspace.DescendantAdded:Connect(function(descendant)
+		if descendant.Parent.Name == "Up" and descendant.ClassName == "ClickDetector" then
+			spawn(function()
+				while true do
+					wait()
+					if descendant then
+						fireclickdetector(descendant)
+					else
+						break;
+					end
+				end
+			end)
+		elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
+			if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+				fireclickdetector(descendant)
+			end
+			descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
+				if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(descendant)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(AXRXOV_fake_script)()
+local function YWHRJM_fake_script() -- Checkbox_2.SetValue 
 	local script = Instance.new('LocalScript', Checkbox_2)
 
+	script.Parent.SpammingBackwards.Disabled = true
 	local currentlyChecked = false
 	local activateScript = script.Parent.SpammingBackwards
 	
@@ -340,5 +395,66 @@ local function ZQAI_fake_script() -- Checkbox_2.SetValue
 	
 	
 end
-coroutine.wrap(ZQAI_fake_script)()
--- Checkbox_2.SpammingBackwards is disabled.
+coroutine.wrap(YWHRJM_fake_script)()
+local function FKKQDX_fake_script() -- Checkbox_2.SpammingBackwards 
+	local script = Instance.new('LocalScript', Checkbox_2)
+	script.Disabled = true
+	script.Name = "SpammingBackwards"
+	
+	
+	for i, v in pairs(workspace:GetDescendants()) do
+		if v.Parent.Name == "Down" and v.ClassName == "ClickDetector" then
+			spawn(function()
+				while true do
+					wait()
+					if v then
+						fireclickdetector(v)
+						if currentlyChecked == false then break;
+						else
+							break;
+	
+						end
+					end
+				end
+			end)
+		elseif v.Parent.Name == "On" and v.ClassName == "ClickDetector" then
+			if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+				fireclickdetector(v)
+			end
+			v.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
+				if v.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(v)
+				end
+			end)
+		end
+	end
+	
+	workspace.DescendantAdded:Connect(function(descendant)
+		if descendant.Parent.Name == "Down" and descendant.ClassName == "ClickDetector" then
+			spawn(function()
+				while true do
+					wait()
+					if descendant then
+						fireclickdetector(descendant)
+						if currentlyChecked == false then break;
+						else
+							break;
+						end
+					end
+				end
+			end)
+		elseif descendant.Parent.Name == "On" and descendant.ClassName == "ClickDetector" then
+			if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+				fireclickdetector(descendant)
+			end
+			descendant.Parent:GetPropertyChangedSignal("BrickColor"):Connect(function()
+				if descendant.Parent.BrickColor ~= BrickColor.new("Dark green") then
+					fireclickdetector(descendant)
+				end
+	
+			end)
+		end
+	end)
+	
+end
+coroutine.wrap(FKKQDX_fake_script)()
